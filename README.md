@@ -36,7 +36,7 @@ As mentioned in the command output, don't forget to add the installation directo
 
 2. Set the ```RUST_SRC_PATH``` environment variable to point to the 'src' dir in the Rust source installation
 
-   (e.g. ```% export RUST_SRC_PATH=/usr/local/src/rust/src``` or ```% export RUST_SRC_PATH=~/.multirust/toolchains/[your-toolchain]/lib/rustlib/src/rust/src``` )
+   (e.g. ```% export RUST_SRC_PATH=/usr/local/src/rust/src``` or ```% export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"``` )
    
 3. Test on the command line:
 
